@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 from Base_App.views import *
 
 urlpatterns = [
-    path('admin/', admin.site.urls, name='admin_pannel'),
+    path('admin/', admin.site.urls, name='admin_pannel')
     path('login/', LoginView.as_view(), name='login'),
     path('signup/', SignupView, name='signup'),
     path('logout/', LogoutView, name='logout'),
